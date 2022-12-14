@@ -2,8 +2,6 @@ import type { GetServerSideProps, NextPage } from "next";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
 
-console.log(context.req.headers.cookie)
-
   return {
     props: {
       cookies: context.req.cookies ? JSON.stringify(context.req.cookies) : 'Пусто',
