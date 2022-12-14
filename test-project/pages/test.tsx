@@ -10,7 +10,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 };
 }
 
-
 const Test: NextPage = ({cookies, cookies2}: any) => {
 
   return (
