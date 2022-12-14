@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   async headers() {
     return [{
-      source: '/test',
+      source: '/',
       headers: [
         {
           key: 'Set-Cookie',

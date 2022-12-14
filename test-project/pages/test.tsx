@@ -4,8 +4,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   return {
     props: {
-      cookies: context.req.cookies ? JSON.stringify(context.req.cookies) : 'Пусто',
-      cookies2: context.req.headers.cookie ? context.req.headers.cookie : 'Пусто'
+      cookies: context.req.cookies ? JSON.stringify(context.req.cookies) : 'Empty',
+      cookies2: context.req.headers.cookie ? context.req.headers.cookie : 'Empty'
   }
 };
 }
